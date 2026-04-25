@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/logo.png" width="200" />
+  <img src="public/logo.png" width="400" />
 </p>
 A JavaScript/React framework of 100+ living characters and an emotion engine that makes your UI expressive, interactive and alive.
 
