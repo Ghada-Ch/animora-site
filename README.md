@@ -1,6 +1,9 @@
 <p align="center">
   <img src="public/logo.png" width="400" />
   <a href="https://animora-site-xi.vercel.app/"> https://animora-site-xi.vercel.app/ </a>
+  ![npm version](https://img.shields.io/npm/v/animora)
+![downloads](https://img.shields.io/npm/dm/animora-kit)
+![license](https://img.shields.io/npm/l/animora)
 </p>
 
 A JavaScript/React framework of 100+ living characters and an emotion engine that makes your UI expressive, interactive and alive.
@@ -365,6 +368,6 @@ MIT © 2024 Animora Team
 
 Made with ❤️ by Ghada Chouichi
 
-[Live Demo](https://animora.dev) • [GitHub](https://github.com/animora-dev/animora) • [NPM](https://npmjs.com/package/animora)
+[Live Demo](https://animora-site-xi.vercel.app/) • [GitHub](https://github.com/Ghada-Ch/animora-site) • [NPM](https://npmjs.com/package/animora)
 
 </div>
