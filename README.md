@@ -1,10 +1,11 @@
 <p align="center">
   <img src="public/logo.png" width="400" />
   <a href="https://animora-site-xi.vercel.app/"> https://animora-site-xi.vercel.app/ </a>
-  ![npm version](https://img.shields.io/npm/v/animora)
+ 
+</p>
+ ![npm version](https://img.shields.io/npm/v/animora)
 ![downloads](https://img.shields.io/npm/dm/animora-kit)
 ![license](https://img.shields.io/npm/l/animora)
-</p>
 
 A JavaScript/React framework of 100+ living characters and an emotion engine that makes your UI expressive, interactive and alive.
 
