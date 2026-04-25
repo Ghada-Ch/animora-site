@@ -1,6 +1,8 @@
 <p align="center">
   <img src="public/logo.png" width="400" />
+  <a href="https://animora-site-xi.vercel.app/"> https://animora-site-xi.vercel.app/ </a>
 </p>
+
 A JavaScript/React framework of 100+ living characters and an emotion engine that makes your UI expressive, interactive and alive.
 
 [Features](#features) • [Installation](#installation) • [Quick Start](#quick-start) • [Documentation](#documentation) • [Characters](#characters) • [Emotion Engine](#emotion-engine)
@@ -9,7 +11,7 @@ A JavaScript/React framework of 100+ living characters and an emotion engine tha
 
 ---
 ## 📸 Demo
-
+<img src="public/animora-fox.png" />
 ## Features
 
 - 🎭 **100+ Living Characters** - A diverse cast of expressive characters including fox, robot, ghost, boy, and panda variants
