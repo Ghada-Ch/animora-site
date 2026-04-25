@@ -84,7 +84,7 @@ const App: React.FC = () => {
           </div>
           
           <motion.div>
-          <div
+          <motion.div
             style={{ marginBottom: '50px' }}
             className="hero-avatar"
             initial={{ opacity: 0, scale: 0.92 }}
@@ -100,13 +100,13 @@ const App: React.FC = () => {
           >
             <Character
               type={selectedCharacter}
-              size="2xl"
+              size="xl"
               emotion={selectedEmotion}
               action={selectedAction}
               variant="glowing"
               interactive
             />
-            </div>
+            </motion.div>
            <Link to="/start-building" style={{ marginTop: '500px' }}>
             <AnimatedButton variant="primary" character="robot" emotion="happy">
               Start Building
