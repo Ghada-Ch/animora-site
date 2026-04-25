@@ -1,10 +1,6 @@
 <p align="center">
   <img src="public/logo.png" width="800" />
 </p>
-
-<h1 align="center">Animora</h1>
-<p align="center">Bring interfaces to life ✨</p>
-
 A JavaScript/React framework of 100+ living characters and an emotion engine that makes your UI expressive, interactive and alive.
 
 [Features](#features) • [Installation](#installation) • [Quick Start](#quick-start) • [Documentation](#documentation) • [Characters](#characters) • [Emotion Engine](#emotion-engine)
