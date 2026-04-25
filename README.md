@@ -10,7 +10,7 @@
 
 
 
-A JavaScript/React framework of 100+ living characters and an emotion engine that makes your UI expressive, interactive and alive.
+A JavaScript library of 100+ living characters and an emotion engine that makes your UI expressive, interactive and alive.
 
 [Features](#features) • [Installation](#installation) • [Quick Start](#quick-start) • [Documentation](#documentation) • [Characters](#characters) • [Emotion Engine](#emotion-engine)
 
