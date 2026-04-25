@@ -1,8 +1,9 @@
-# animora
+<p align="center">
+  <img src="public/logo.png" width="800" />
+</p>
 
-<div align="center">
-
-**Bring interfaces to life.**
+<h1 align="center">Animora</h1>
+<p align="center">Bring interfaces to life ✨</p>
 
 A JavaScript/React framework of 100+ living characters and an emotion engine that makes your UI expressive, interactive and alive.
 
@@ -11,6 +12,7 @@ A JavaScript/React framework of 100+ living characters and an emotion engine tha
 </div>
 
 ---
+## 📸 Demo
 
 ## Features
 
@@ -107,9 +109,9 @@ Available character types:
 
 - **fox** - Playful and clever fox character with ear twitching
 - **robot** - Futuristic interactive robot with LED eyes
-- **ghost** - Friendly ghost character (coming soon)
-- **boy** - Expressive boy character (coming soon)
-- **panda** - Cute and calm panda character (coming soon)
+- **ghost** - Friendly ghost character
+- **boy** - Expressive boy character 
+- **panda** - Cute and calm panda character 
 
 ### Character Props
 
@@ -231,7 +233,7 @@ MOTION.transitions.emotionChange // Emotion transitions
 ```jsx
 <Character
   type="fox"               // Character type
-  size="md"               // Character size (xs, sm, md, lg, xl)
+  size="md"               // Character size (xs, sm, md, lg, xl,2xl)
   emotion="happy"         // Current emotion
   variant="glowing"       // Visual variant
   interactive={true}      // Enable interactions
@@ -333,6 +335,15 @@ function EmotionShowcase() {
 - Efficient animation frame management
 - Tree-shaking support
 - ~150KB gzipped (with all dependencies)
+
+## ⚡ Roadmap
+ Fox character
+ Emotion engine
+ Eye tracking
+ 100+ characters
+ Emotion blending system
+ WebGL characters
+ AI-driven reactions
 
 ## Contributing
 
