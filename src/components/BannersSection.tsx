@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { SuccessBanner, WarningBanner, BrokenGlassesBanner } from 'animora';
+import { SuccessBanner, WarningBanner } from 'animora';
 
 type PreviewBannerProps = {
   title?: string;
