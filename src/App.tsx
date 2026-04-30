@@ -1,9 +1,9 @@
 import React, { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Character, AnimatedButton } from "animora-kit";
-import type { Emotion } from 'animora-kit';
-import type { CharacterAction, CharacterType } from 'animora-kit';
+import {Character, AnimatedButton} from 'animora';
+import type { Emotion } from 'animora';
+import type { CharacterAction, CharacterType } from 'animora';
 import './App.css';
 
 type EmotionSpec = {
@@ -22,7 +22,7 @@ const EMOTIONS: EmotionSpec[] = [
   { name: 'neutral', color: '#94A3B8', label: 'Neutral' },
 ];
 
-const CHARACTERS: CharacterType[] = ['fox', 'robot', 'ghost', 'boy', 'panda'];
+const CHARACTERS: CharacterType[] = ['fox', 'robot', 'boy', 'panda', 'bear', 'turtle',];
 const ACTIONS: CharacterAction[] = [
   'idle',
   'eye-contact',
@@ -83,9 +83,7 @@ const App: React.FC = () => {
             </div>
           </div>
           
-          <motion.div>
           <motion.div
-            style={{ marginBottom: '50px' }}
             className="hero-avatar"
             initial={{ opacity: 0, scale: 0.92 }}
             animate={{ opacity: 1, scale: 1, x: hoverOffset.x, y: hoverOffset.y }}
@@ -106,11 +104,10 @@ const App: React.FC = () => {
               variant="glowing"
               interactive
             />
-            </motion.div>
-           <Link to="/start-building" style={{ marginTop: '500px' }}>
-            <AnimatedButton variant="primary" character="robot" emotion="happy">
-              Start Building
-            </AnimatedButton>
+            <Link to="/start-building" style={{ marginTop: '20px' }}>
+              <AnimatedButton variant="primary" character="robot" emotion="happy">
+                Start Building
+              </AnimatedButton>
             </Link>
           </motion.div>
          
@@ -206,58 +203,64 @@ const App: React.FC = () => {
         </motion.section>
 
         <motion.section
-          className="panel character-panel"
-          variants={cardAnim}
-          initial="hidden"
-          animate="show"
-          transition={{ duration: 0.65, delay: 0.24 }}
-        >
-          <h2>Character Style Direction</h2>
-          <div className="feature-chip-row">
-            {ACTIONS.map(item => (
-              <button
-                key={item}
-                className={item === selectedAction ? 'chip active' : 'chip'}
-                onClick={() => setSelectedAction(item)}
-              >
-                {item}
-              </button>
-            ))}
-          </div>
-          <div className="character-lineup">
-            {CHARACTERS.map(type => (
-              <div key={type} className="lineup-item">
-                <Character
-                  type={type}
-                  size="lg"
-                  emotion={selectedEmotion}
-                  action={selectedAction}
-                  variant={type === selectedCharacter ? 'glowing' : 'default'}
-                  interactive
-                  onClick={() => setSelectedCharacter(type)}
-                />
-                <button
-                  className={type === selectedCharacter ? 'chip active' : 'chip'}
-                  onClick={() => setSelectedCharacter(type)}
-                >
-                  {type}
-                </button>
-              </div>
-            ))}
-          </div>
-          <div className="feature-chip-row">
-            {[
-              'Expressive',
-              'Adaptive',
-              'Emotional',
-              'Interactive',
-              'Customizable',
-            ].map(item => (
-              <span key={item}>{item}</span>
-            ))}
-          </div>
-        </motion.section>
+  className="panel character-panel"
+  variants={cardAnim}
+  initial="hidden"
+  animate="show"
+  transition={{ duration: 0.65, delay: 0.24 }}
+>
+  <h2>Character Style Direction</h2>
 
+  {/* ACTIONS */}
+  <div className="feature-chip-row">
+    {ACTIONS.map(item => (
+      <button
+        key={item}
+        className={item === selectedAction ? "chip active" : "chip"}
+        onClick={() => setSelectedAction(item)}
+      >
+        {item}
+      </button>
+    ))}
+  </div>
+
+  {/* CHARACTERS GRID (3 per row) */}
+  <div className="character-lineup">
+    {CHARACTERS.map(type => (
+      <div key={type} className="lineup-item">
+        <Character
+          type={type}
+          size="lg"
+          emotion={selectedEmotion}
+          action={selectedAction}
+          variant={type === selectedCharacter ? "glowing" : "default"}
+          interactive
+          onClick={() => setSelectedCharacter(type)}
+        />
+
+        <button
+          className={type === selectedCharacter ? "chip active" : "chip"}
+          onClick={() => setSelectedCharacter(type)}
+        >
+          {type}
+        </button>
+      </div>
+    ))}
+  </div>
+
+  {/* FEATURES */}
+  <div className="feature-chip-row">
+    {[
+      "Expressive",
+      "Adaptive",
+      "Emotional",
+      "Interactive",
+      "Customizable",
+    ].map(item => (
+      <span key={item}>{item}</span>
+    ))}
+  </div>
+</motion.section>
         <motion.section
           className="panel motion-panel"
           variants={cardAnim}
@@ -379,7 +382,7 @@ const App: React.FC = () => {
             </article>
           </div>
           <div className="cta-row">
-            <Link to="/start-building" style={{ marginTop: '20px' }}>
+                        <Link to="/start-building" style={{ marginTop: '20px' }}>
             <AnimatedButton variant="primary" character="robot" emotion="happy">
               Start Building
             </AnimatedButton>
